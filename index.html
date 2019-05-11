@@ -43,6 +43,21 @@
       </ol>
     </div>
 
+    <br />
+
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+      <!-- v-on:click is the event listener for this button, and when its clicked, it refers the var that is connected to the "app-5" variable in the js script. in the app-5 variable, it cites the v-on:click="reverseMessage" function and does whatever that function does-->
+    </div>
+
+    <br />
+
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message" />
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
